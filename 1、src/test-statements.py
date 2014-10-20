@@ -10,3 +10,5 @@ print greeting,name
 print 'hello,',  #如果在结尾处加上逗号，那么接下来的语句会和前一条语句在同一行打印
 print 'world!'
 
+# REF: http://www.cnblogs.com/zhoujie/archive/2013/04/08/3008300.html
+
