@@ -6,6 +6,7 @@ print time()
 
 # time --- localtime()							# 将一个时间戳转换为当前时区的struct_time。secs参数未提供，则以当前时间为准。
 print localtime()
+print localtime()[:6]
 print localtime(time())
 print localtime(1370485361.442)
 print localtime(345)							# 默认从1970年1月1日开始
