@@ -12,7 +12,10 @@ db.close
 
 # mysql --- create database
 import MySQLdb as mdb
-db = mdb.connect('172.29.88.120', 'cloud', 'cloud')
+file = open("D:\\Documents and Settings\\Desktop\\config.txt")
+config = file.readline()
+param = list(config.split(' '))
+db = mdb.connect(*param)
 cur = db.cursor()
 try:
 	cur.execute('create database db_name')
