@@ -17,6 +17,4 @@ for data in cur.fetchall():							# 逐条输出
 	print data
 cx.close()											# 关闭数据库连接
 
-
-
 # REF-A: http://www.cnblogs.com/yuxc/archive/2011/08/18/2143606.html
