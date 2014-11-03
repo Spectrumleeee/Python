@@ -1,4 +1,5 @@
 # coding=utf-8
+# 该脚本用于测试学习基于Python连接和操作sqlite数据库
 
 import sqlite3						# 导入Python SQLITE数据库模块  Python2.5之后，内置了SQLite3，成为了内置模块
 
