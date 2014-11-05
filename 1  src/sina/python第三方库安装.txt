@@ -1,0 +1,10 @@
+pip用于安装python第三方库，例如：
+	pip install module-name
+win8-64位安装pip过程：
+	1、下载ez_install.py
+	2、执行 python ez_install.py （有时候要用代理服务器，一般不用）
+	3、切换到C:\python32\Scripts\目录，执行easy_install pip，完成安装
+	4、接着就可以用 pip install 安装第三方python库了
+	5、安装pymouse:	使用豆瓣数据源：pip install pymouse -i http://pypi.douban.com/simple/
+	6、安装pywin32:	从http://sourceforge.net/projects/pywin32/files/pywin32/下载exe安装程序，然后安装
+	7、安装pyhook:	从http://sourceforge.net/projects/pyhook/files/latest/download?source=directory 下载exe安装程序，然后点击安装
