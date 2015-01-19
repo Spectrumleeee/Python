@@ -1,5 +1,6 @@
 from handler import Handler
 from ui.user import LoginForm
+from service.account import loginByPassword
 
 def test():
 	default_url = "http://abc.com"
@@ -20,4 +21,10 @@ class LoginHandler(Handler):
 		username = form.email.data.encode(encoding='utf-8')
 		password = form.password.data.encode(encoding='utf-8')
 		print username, password
-		test()
+		bool = loginByPassword(username, password)
+		if bool :
+			self.set_secure_cookie('token', 'spectrumleeee')
+			self.set_secure_cookie('user', username)
+			self.render('index.html', title="fuckabc")
+		
+
