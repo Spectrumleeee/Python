@@ -8,6 +8,7 @@ import tornado.web
 from tornado.options import define, options
 from handlers.user_handler import *
 from handlers.main_handler import *
+from handlers.about_handler import *
 define('port', default = 8888, help = 'run on the given port', type = int)
 define('host', default = 'localhost', help = 'run on the given host', type = str)
 
@@ -25,7 +26,8 @@ class Application(tornado.web.Application):
 		
 		handlers = [
 			(r"/", MainHandler),
-			(r"/login", LoginHandler)
+			(r"/login", LoginHandler),
+			(r"/about", AboutHandler)
 		]
 		
 		tornado.web.Application.__init__(self, handlers, **settings)

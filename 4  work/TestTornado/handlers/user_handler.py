@@ -25,6 +25,8 @@ class LoginHandler(Handler):
 		if bool :
 			self.set_secure_cookie('token', 'spectrumleeee')
 			self.set_secure_cookie('user', username)
-			self.render('index.html', title="fuckabc")
+			self.redirect('/')
+		else:
+			self.render('404.html')
 		
 

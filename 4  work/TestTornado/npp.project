@@ -1,0 +1,147 @@
+<NotepadPlus>
+    <Project name="TestTornado">
+        <Folder name="handlers">
+            <File name="handlers\handler.py" />
+            <File name="handlers\handler.pyc" />
+            <File name="handlers\main_handler.py" />
+            <File name="handlers\main_handler.pyc" />
+            <File name="handlers\user_handler.py" />
+            <File name="handlers\user_handler.pyc" />
+            <File name="handlers\__init__.py" />
+            <File name="handlers\__init__.pyc" />
+        </Folder>
+        <Folder name="lib">
+            <File name="lib\utils.py" />
+            <File name="lib\utils.pyc" />
+            <File name="lib\__init__.py" />
+            <File name="lib\__init__.pyc" />
+        </Folder>
+        <Folder name="service">
+            <File name="service\account.py" />
+            <File name="service\account.pyc" />
+            <File name="service\service.py" />
+            <File name="service\test.py" />
+            <File name="service\__init__.py" />
+            <File name="service\__init__.pyc" />
+        </Folder>
+        <Folder name="static">
+            <Folder name="css">
+                <File name="static\css\device.css" />
+                <File name="static\css\router.css" />
+            </Folder>
+            <Folder name="images">
+                <File name="static\images\account.png" />
+                <File name="static\images\advance.png" />
+                <File name="static\images\agreement-bg.png" />
+                <File name="static\images\alert.gif" />
+                <File name="static\images\android-download.png" />
+                <File name="static\images\arrow.png" />
+                <File name="static\images\basic.png" />
+                <File name="static\images\basicLoadingWa.gif" />
+                <File name="static\images\basicLoadingWl.gif" />
+                <File name="static\images\bg-tile.png" />
+                <File name="static\images\bg.jpg" />
+                <File name="static\images\btn-1.png" />
+                <File name="static\images\btn-2.png" />
+                <File name="static\images\btn-22.png" />
+                <File name="static\images\btn-3.png" />
+                <File name="static\images\btn-4-1.png" />
+                <File name="static\images\btn-4.png" />
+                <File name="static\images\btn-5.png" />
+                <File name="static\images\btn-6.png" />
+                <File name="static\images\btn-7.png" />
+                <File name="static\images\btn-8.png" />
+                <File name="static\images\btn-off.png" />
+                <File name="static\images\btn-on.png" />
+                <File name="static\images\cancle.png" />
+                <File name="static\images\coverLoading.gif" />
+                <File name="static\images\edit.png" />
+                <File name="static\images\editpassword.png" />
+                <File name="static\images\empty-strength.png" />
+                <File name="static\images\fail.png" />
+                <File name="static\images\find-password-logo.png" />
+                <File name="static\images\good-strength.png" />
+                <File name="static\images\icon.png" />
+                <File name="static\images\identifying-code-field.png" />
+                <File name="static\images\ios-download.png" />
+                <File name="static\images\lan-bg.png" />
+                <File name="static\images\lan.png" />
+                <File name="static\images\line.png" />
+                <File name="static\images\list.png" />
+                <File name="static\images\login-bg-2.png" />
+                <File name="static\images\login-logo.png" />
+                <File name="static\images\logo-router.png" />
+                <File name="static\images\logo.png" />
+                <File name="static\images\logout.png" />
+                <File name="static\images\logo_eq.png" />
+                <File name="static\images\menu-arrow.png" />
+                <File name="static\images\my-account.png" />
+                <File name="static\images\network.png" />
+                <File name="static\images\notice-bg.png" />
+                <File name="static\images\offline-select.png" />
+                <File name="static\images\offline.png" />
+                <File name="static\images\online-select.png" />
+                <File name="static\images\online.png" />
+                <File name="static\images\passwordStrenth.png" />
+                <File name="static\images\popup-bg.png" />
+                <File name="static\images\product.png" />
+                <File name="static\images\register-bg-1.png" />
+                <File name="static\images\register-bg.png" />
+                <File name="static\images\register-logo.png" />
+                <File name="static\images\reset-password-logo.png" />
+                <File name="static\images\resetPassword-bg.png" />
+                <File name="static\images\saveLoading.gif" />
+                <File name="static\images\send-email-again-bg.png" />
+                <File name="static\images\strong-strength.png" />
+                <File name="static\images\success.png" />
+                <File name="static\images\tableCancel.gif" />
+                <File name="static\images\tableSave.gif" />
+                <File name="static\images\text-field.png" />
+                <File name="static\images\Thumbs.db" />
+                <File name="static\images\update-1.png" />
+                <File name="static\images\update-2.png" />
+                <File name="static\images\update-3.png" />
+                <File name="static\images\update-4.png" />
+                <File name="static\images\update-5.png" />
+                <File name="static\images\update.png" />
+                <File name="static\images\weak-strength.png" />
+                <File name="static\images\wifi-bg.png" />
+                <File name="static\images\wifi.png" />
+                <File name="static\images\wirelssSet.png" />
+                <File name="static\images\wrong.png" />
+                <File name="static\images\wzd.png" />
+                <File name="static\images\wzdLogo.png" />
+            </Folder>
+            <Folder name="js">
+                <Folder name="device">
+                    <File name="static\js\device\ajax.js" />
+                    <File name="static\js\device\click.js" />
+                    <File name="static\js\device\device.js" />
+                    <File name="static\js\device\show.js" />
+                </Folder>
+                <File name="static\js\jquery.js" />
+                <File name="static\js\json2.js" />
+                <File name="static\js\string.js" />
+                <File name="static\js\utils.js" />
+            </Folder>
+            <File name="static\favicon.ico" />
+        </Folder>
+        <Folder name="templates">
+            <File name="templates\404.html" />
+            <File name="templates\500.html" />
+            <File name="templates\account.html" />
+            <File name="templates\device_layout.html" />
+            <File name="templates\error.html" />
+            <File name="templates\footer.html" />
+            <File name="templates\index.html" />
+            <File name="templates\network_lan.html" />
+        </Folder>
+        <Folder name="ui">
+            <File name="ui\user.py" />
+            <File name="ui\user.pyc" />
+            <File name="ui\__init__.py" />
+            <File name="ui\__init__.pyc" />
+        </Folder>
+        <File name="myApp.py" />
+    </Project>
+</NotepadPlus>
