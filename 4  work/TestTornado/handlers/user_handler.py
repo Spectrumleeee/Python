@@ -10,7 +10,7 @@ def test():
 	
 class LoginHandler(Handler):
 	def get(self):
-		self.render('account.html')
+		self.render('login.html')
 		
 	def post(self):
 		form = LoginForm(self)
