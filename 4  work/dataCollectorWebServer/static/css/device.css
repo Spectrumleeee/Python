@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th{font-size:1em;font-style:normal;font-weight:normal}
+ul,ol{list-style:none}
+fieldset,img{border:none}
+input,select,textarea{font:12px "microsoft yahei"}
+caption,th{text-align:left}
+
+body {
+    font: 12px/22px "microsoft yahei",Arial,Verdana,sans-serif,"Lucida Grande","Lucida Sans Unicode","宋体";
+    background-color: #ffffff;
+    display: block;
+}
+
+a {
+    text-decoration: none
+}
+
+.clear{clear:both}
+
+#globalbody {
+    height: auto !important;
+    width: 100%;
+}
+
+#main_container {
+    height: 768px;
+    margin: 0 auto;
+    position :relative;
+    width: 1024px;
+}
+
+#header {
+    width : 1024px;
+    height: 68px;
+    background-color: #272B37;
+}
+
+#logo {
+    float: left;
+    width: 220px;
+}
+
+#account {
+    float: right;
+    margin: 22px 15px;
+}
+#account div {
+    float: left;
+    font: 14px "microsoft yahei";
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+#account div a {
+    display: block;
+    font: 14px 'microsoft yahei';
+    color: #ffffff;
+}
+
+#account div a.myAccount {
+    background: url("../images/my-account.png") 0 2px no-repeat;
+    padding-left: 22px;
+}
+
+#account div a.logout {
+    background: url("../images/logout.png") 0 2px no-repeat;
+    padding-left: 22px;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+}
+
+#left_content {
+    float: left;
+    width: 220px;
+    height: 700px;
+    background-color: #272B37;
+}
+
+#right_content {
+    float: right;
+    width: 804px;
+    height: 700px;
+    position: relative;
+}
+
+#left_content #equipment {
+    width: 220px;
+    height: 46px;
+    background: url("../images/btn-7.png") 0 0 no-repeat;
+}
+
+#left_content #equipment p{
+    float: left;
+    font: 14px "microsoft yahei";
+    font-weight: bold;
+    color: #ffffff;
+    margin: 15px 15px;
+}
+
+#device_list {
+    font: 14px "microsoft yahei";
+    color: #9c9fa2;
+    margin: 20px 0;
+}
+
+#device_list ul li {
+    height: 46px;
+    line-height: 46px;
+    padding: 0 40px;
+    cursor: pointer;
+    background: url(../images/online.png) 15px 19px no-repeat;
+}
+
+#device_list ul li:hover {
+    color: beige;
+    background: url(../images/online-select.png) 15px 19px no-repeat;
+}
+
+#device_list ul li.online {
+    background: url(../images/online-select.png) 15px 19px no-repeat;
+}
+
+#device_list ul li.selected {
+    color: #ffffff;
+}
+
+#device_list ul li b {
+    float: right;
+    margin-right: -25px
+}
+#content_menu {
+    height: 31px;
+    width: 764px;
+    position: relative;
+    background-color: #EFEFEF;
+    padding: 15px 0 0 40px;
+}
+#content_menu ul li {
+    float: left;   
+    font: 14px "microsoft yahei";
+    color: #727582;
+    font-weight: bold;
+    margin: 0 20px;  
+}
+#content_menu ul li a {
+    color: #727582;
+}
+#content_menu ul li a.selected {
+    color: blue;
+}
+.device_info {
+    width: 100%;
+    height: 622px;
+    float: right;
+    position: relative;
+}
+
+.content_footer {
+    width: 100%;
+    height: 32px;
+    float: right;
+    background-color: #DCDCDC;
+}
+
+.content_footer p {
+    width: 784px;
+    height: 32px;
+    text-align: right;
+    padding: 8px 20px 0 0;
+    font: 12px "microsoft yahei";
+    color: #9c9fa2;
+}
+.show_device_title {
+    width: 100%;
+    height: 46px;
+    font: 16px "microsoft yahei";
+    font-weight: bold;
+    float: right;
+    position: relative;
+    color: #727582;
+    background-color: beige;
+}
+
+.show_device_title p {
+    margin: 12px auto;
+    text-align: center;
+}
+.show_device_info {
+    width: 100%;
+    height: 312px !important;
+    float: right;
+    position: relative;
+}
+
+.productImage {
+    width: 384px;
+    float: right;
+}
+
+.productImage img {
+    margin: 36px 0 0 90px;
+}
+
+.productDetail{
+    float: left;
+    width: 420px;
+    font: 14px "microsoft yahei";
+    color: #727582;
+    padding-top: 60px;
+}
+.productDetail>p {
+    margin: 10px 0 0 40px;
+}
+.alias_form {
+    margin: 0px 0 0 40px;
+    position: relative;
+    height: 20px;
+}
+.alias_form label {
+    height: 20px;
+    float: left;
+}
+
+.alias_form input {
+    float: left;
+}
+
+.alias_form input[type=image] {
+    margin-left: 10px;
+}
+
+.setupContent {
+    width: 400px;
+    padding: 100px 0 0 0;
+    margin: 0 0 0 202px;
+    text-align: center;
+}
+
+.setupContent ._p1 {
+    font: 16px/24px "microsoft yahei";
+    color: #45A5FE;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+.setupContent ._p2 {
+    font: 12px/20px "microsoft yehei";
+    color: #727582;
+}
+
+.passwordInput {
+    width:200px;
+    height:32px;
+    padding:20px;
+    background-color:#ffffff;
+    margin:20px auto
+}
+
+input.setupInput{
+    width:186px;
+    background:none;
+    border:#E7E7E7 1px solid;
+    height:32px;
+    font:12px "microsoft yahei";
+    color:#727582; padding:0 7px;
+    line-height:32px;
+}
+
+.setupBtns{width:500px; text-align:center; margin:10px 0 0 70px}
+.setupBtns a{display:block; width:120px; height:29px; text-align:center; background:url(../images/btn-5.png); font:14px "microsoft yahei"; color:#ffffff; padding-top:5px; float:left; margin:0 5px;}
+.setupBtns a.cancle{background:url(../images/btn-6.png);}
+
+.online_info {
+    width: 100%;
+    height: 270px;
+    background-color: #ffffff !important;
+    float: left;
+    position: relative;
+}
+.lan_info {
+    float: left;
+    width: 323px;
+    height: 270px;
+    border-right: #D6D6D6 2px dotted;
+    background: url("../images/lan-bg.png") 0 0 no-repeat;
+    position: relative;
+}
+
+.lan_info img.tb {
+    position: absolute;
+    top: -40px;
+    left: 122px;
+}
+
+.lan_info table {
+    font: 13px "microsoft yahei";
+    color: #727582;
+    font-weight: bold;
+    margin: 100px 0 0 55px;
+}
+
+.wifi_info {
+    float: right;
+    width:479px;
+    height: 270px;
+    background: url("../images/wifi-bg.png") 0 0 no-repeat;
+    position: relative;
+}
+
+.wifi_info img.tb {
+    position: absolute;
+    top: -40px;
+    left: 200px;
+}
+
+.wifi_info table {
+    font:14px "microsoft yahei";
+    color: #727582;
+    font-weight: bold;
+    margin: 83px 0 0 55px;
+}
+
+.offline_info {
+    width: 100%;
+    height: 270px;
+    background-color: #EFEFEF;
+    float: left;
+    position: relative;
+}
+
+.not_online {
+    width: 200px;
+    padding: 100px 0 0 0;
+    margin: 0 0 0 302px;
+    text-align: center;
+}
+
+.not_online p {
+    font: 16px/24px "microsoft yahei";
+    color: #45A5FE;
+    font-weight: bold;
+    margin:  20px 0 10px 0;
+}
