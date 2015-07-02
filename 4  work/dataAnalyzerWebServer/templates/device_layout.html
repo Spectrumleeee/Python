@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TP-LINK云服务</title>
+    <link type="text/css" rel="stylesheet" href="{{ static_url('css/device.css') }}" />
+    <script type="text/javascript" src="{{ static_url('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/string.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/json2.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/utils.js') }}"></script>
+    {% block css %} {% end %}
+    {% block js %} {% end %}
+</head>
+<body>
+    <div id="globalbody">
+        <div id="main_container">
+            <div id="header">
+                <div id="logo">
+                    <img alt="" src='{{ static_url("images/logo_eq.png") }}'>
+                </div>
+                <div id="account">
+                    <div><a class="myAccount" href="#">{{ current_user }}</a></div>
+                    <div class="line">/</div>
+                    <div><a class="logout" href="#">退出</a> </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="left_content">
+                    {% block content_list %}{% end %}
+                </div>
+                <div id="right_content">
+                {% block content %} {% end %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -7,39 +7,40 @@ define('mongodbport', default = 27017, help = 'mongodb ip addres', type = int)
 define('mongodbdatabase', default = 'formal', help = 'mongodb database', type = str)
 define('mongodbcollection', default = 'collector', help = 'mongodb collection', type = str)
 
-
 class mongoDao():
-	def __init__(self):
+	def __init__(self, database = None, collection = None):
 		conn = pymongo.MongoClient(options.mongodbip, options.mongodbport)
-		print options.mongodbip
-		db = conn[options.mongodbdatabase]
-		self.coll = db[options.mongodbcollection]
+		if database == None:
+			database = options.mongodbdatabase
+		if collection == None:
+			collection = options.mongodbcollection
+		db = conn[database]
+		self.coll = db[collection]
 
-	def queryAll(self, interval):
-		currTime = strftime('%Y%m%d%H%M%S', localtime(time() - interval))
-		return self.coll.find({'receivedTime':{'$gt':currTime}})
+	def queryAll(self):
+		return self.coll.find()
 
-	def query(self, deviceid, starttime, finishtime):
+	def query0(self, deviceid, starttime, finishtime):
 		jsonArray = [{"receivedTime": {"$gt": starttime}}, {"receivedTime": {"$lt": finishtime}}]
 		if len(deviceid) == 40:
 			jsonArray.append({"deviceId":deviceid})
 		jsonObj = {"$and" : jsonArray }
 		print jsonObj
 		return self.coll.find(jsonObj)
-
+	
+	def query(self, jsonObj):
+		return self.coll.find(jsonObj)
+		
 	def persist(self):
 		currTime = strftime('%Y%m%d%H%M%S', localtime(time()));
 		user = {"name":"cui","age":"10", "receivedTime":currTime}
 		self.coll.insert(user)
+	
+	def persist(self, jsonObj):
+		self.coll.insert(jsonObj)
 
 def main():
 	mongo = mongoDao()
-	data = []
-	for item in mongo.queryAll(3000000):
-		del item['_id']
-		data.append(item)
-	print data
-	#mongo.persist()
 
 if __name__ == '__main__':
 	main()

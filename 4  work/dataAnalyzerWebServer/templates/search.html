@@ -7,7 +7,7 @@
 
 <body>
 	<p align='center'> Data Collector </p>
-	<form action="/" method="POST">
+	<form action="/search" method="POST">
 		{% module xsrf_form_html() %}
 		<table align='center' style="background:#FFF38F">
 			<tr align="center"><td>
@@ -19,6 +19,9 @@
 			<td>
 				<span>Finish Time</span>
 			</td>
+			<td>
+				<span>Spent Time(s)</span>
+			</td>
 			</tr>
 			<tr><td>
 				<input type="text" id="deviceid" name="deviceid" size='60' value="{{ deviceid }}"/>
@@ -28,6 +31,9 @@
 			</td>
 			<td>
 				<input type="text" id="finishtime" name="finishtime" value="{{ finishtime }}"/>
+			</td>
+			<td>
+				<span id="spentTime">{{ spenttime }} </span>
 			</td>
 			<td>
 				<input type="submit" value="查询"/>

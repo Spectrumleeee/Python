@@ -1,0 +1,76 @@
+{% extends 'router_main.html' %}
+{% block js %}
+<script type="text/javascript" src="{{ static_url('js/device/router.js') }}"></script>
+{% end %}
+{% block network %}
+<li id="network" class="menu_selected">
+    <i class="menu_up menu_selected"></i>
+    <label class="menu_label">网络参数</label>
+    <i class="menu_down"></i>
+</li>
+<li id="wanSet" class="sub_menu">
+    <i class="sub_img"></i>
+    <label class="sub_menu_label">WAN口状态</label>
+</li>
+<li id="lanSet" class="sub_menu_selected">
+    <i class="sub_img"></i>
+    <label class="sub_menu_label">LAN口设置</label>
+</li>
+{% end %}
+{% block setup_content %}
+<fieldset>
+    <div id="detail">
+        <div id="detail_content" class="detail_content">
+            <div class="detail_title">
+                <label class="detail_title">LAN口设置</label>
+            </div>
+            <div class="block">
+                <ul class="gridLine gridLineA">
+                    <label class="desLblA" for="mac">MAC地址：</label>
+                    <label id="mac" class="noteLbl">{{ entry['macaddr'] }}</label>
+                </ul> 
+                <ul class="gridLine gridLineA">
+                    <label class="desLblA">LAN口IP设置：</label>
+                    <li class="textConA textCon">
+                        <span class="select">
+                            <span class="value hsValueA">{{ entry[ipaddr] }}</span>
+                            <i class="arrow"></i>
+                        </span>
+                    </li>
+                </ul>
+                <ul style="overflow: hidden; visibility: visible; top: -1px;" id="selOptsUllanSel" class="selOptsUl">
+                    <li class="option" title="自动（推荐）" style="background-color: rgb(72, 180, 255); color: rgb(255, 255, 255);">
+                        <span style="visibility: hidden;">√</span>自动（推荐）
+                    </li>
+                    <li style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class="option" title="手动">
+                        <span style="visibility: visible;">√</span>手动
+                    </li>
+                </ul>
+                <a style="display: block;" id="lanManualIp">
+                    <ul class="gridLine gridLineA">
+                        <label class="desLblA" for="lanIpAddr">IP地址：</label>
+                        <li class="textConA textCon"><input id="lanIpAddr" class="textA text hoverBd" maxlength="15"><i class="tip"></i></li>
+                    </ul>
+                    <ul class="gridLine gridLineA">
+                        <label class="desLblA" for="maskAddrInput">子网掩码：</label>
+                        <li class="textConA textCon"><input id="maskAddrInput" class="textA text hoverBd" maxlength="15"><i class="tip"></i></li>
+                    </ul>
+                </a>
+                <a style="display: none;" id="lanAutoIp">
+                    <ul class="gridLine gridLineA">
+                        <label class="desLblA">IP地址：</label>
+                        <label id="lanIpLbl" class="noteLbl">192.168.168.1</label>
+                    </ul>
+                    <ul class="gridLine gridLineA">
+                        <label class="desLblA">子网掩码：</label>
+                        <label id="lanMaskLbl" class="noteLbl">255.255.255.0</label>
+                    </ul>
+                </a>
+                <div class="blockFuncA">
+                    <input id='save' class="btnA subBtn" type='button' value='保存'/>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+{% end %}

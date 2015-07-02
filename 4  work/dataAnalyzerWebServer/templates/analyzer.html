@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Data Analyzer</title>
+	<link href="{{ static_url('css/examples.css') }}" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="{{ static_url('js/jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ static_url('js/jquery.flot.js') }}"></script>
+	<script type="text/javascript" src="{{ static_url('js/jquery.flot.crosshair.js') }}"></script>
+	<script type="text/javascript" src="{{ static_url('js/jquery.citySelector.js') }}"></script>
+	<script type="text/javascript" src="{{ static_url('js/analyzer/analyzer.js') }}"></script>
+</head>
+
+<body>
+	<p align='center'> Data Analyzer </p>
+	<div class="city_selector" style="width:600px; margin-left: auto;margin-right: auto;">
+		<select class="province"></select> 
+		<select class="city"></select>
+	</div>
+	<div>
+		<div id="placeholder" style="width:600px; height:300px;margin-left: auto;margin-right: auto;"></div>
+		<div id="placeholder1" style="width:600px; height:300px;margin-left: auto;margin-right: auto;"></div>
+	</div>
+</body>
+</html>
