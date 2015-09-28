@@ -101,7 +101,7 @@ def showStocksCurrent(interval, round):
 		count += 1
 	
 if __name__ == '__main__':
-	showStocksCurrent(10,30)
+	showStocksCurrent(30,10)
 #	showStocksHistory()
 	
 	

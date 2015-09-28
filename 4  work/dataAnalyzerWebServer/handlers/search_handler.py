@@ -5,7 +5,7 @@ from time import *
 
 class SearchHandler(Handler):
 	def get(self):
-		content = {"deviceid":"F2E81EF6ED84CB8AEC6CCEC682A0F000C5D7350B", "starttime":"20150501000000", "finishtime":"25150501000000"}
+		content = {"deviceid":"F2E81EF6ED84CB8AEC6CCEC682A0F000C5D7350B", "starttime":"20150501000000", "finishtime":"25150501000000", "spenttime": 0.0}
 		items = []
 		self.render('search.html', items=items, **content)
 		
@@ -15,9 +15,9 @@ class SearchHandler(Handler):
 		if not form.validate():
 			print(form.errors)
 			return
-		deviceid = form.deviceid.data.encode(encoding='utf-8')
-		starttime = form.starttime.data.encode(encoding='utf-8')
-		finishtime = form.finishtime.data.encode(encoding='utf-8')
+		deviceid = form.deviceid.data.encode()
+		starttime = form.starttime.data.encode()
+		finishtime = form.finishtime.data.encode()
 		print deviceid, starttime, finishtime
 
 		mongo = mongoDao()
