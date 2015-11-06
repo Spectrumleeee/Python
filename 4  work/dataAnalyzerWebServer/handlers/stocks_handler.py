@@ -4,7 +4,7 @@ from handler import Handler
 from service.stocks import *
 
 class StocksHandler(Handler):
-	stockStr = "sz002204,sh601933,sh600900"
+	stockStr = "sz000705,sz000599,sz002475,sz000729,sh600546"
 	strockShSzStr = "s_sh000001,s_sz399001"
 	
 	def get(self):
